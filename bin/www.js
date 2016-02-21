@@ -1,0 +1,21 @@
+'use strict';
+
+var app = require('../app');
+var http = require('http');
+
+var port = process.env.PORT || '4000';
+app.set('port', port);
+
+var server = http.createServer(app);
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+function onError(error){
+    console.log('['+(new Date()).toString()+'] ERROR : A wild error appeared: ' + error);
+}
+
+function onListening(){
+    console.log('['+(new Date()).toString()+'] INFO: Listening on port ' + port);
+}

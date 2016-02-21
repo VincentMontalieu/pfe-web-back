@@ -1,0 +1,15 @@
+{
+  "name": "pfe-web-back",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www.js"
+  },
+  "dependencies": {
+    "express" : "^4.13.3",
+    "body-parser" : "^1.14.1",
+    "grunt": "^0.4.5",
+    "grunt-express-server": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
