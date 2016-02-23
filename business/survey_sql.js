@@ -21,7 +21,7 @@ function sendTheSurvey(body, callback) {
       }
       else {
         console.log(error);
-        callback({status:'error', data: "Votre avis n'a pas été ajouté..."});
+        callback({status:'error', data: "La base de données a rencontré une erreur :("});
       }
     });            
 }

@@ -40,3 +40,13 @@ There are three ways to run this server:
 I recommend using [Forever](https://github.com/foreverjs/forever).
 
 * Run `forever start bin/www.js` from project directory.
+
+## Database
+
+The database should be structured as follow:
+
+* Name: `pfe`
+
+* One table: `survey`
+
+* Rows: `id` `date` `proprete` `tranquilite` `services` `beaute` `raison`
