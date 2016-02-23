@@ -1,6 +1,6 @@
 # pfe-web-back
 
-Back-end du client web mobile pour le PFE "Fouille de données environnementales issues du site de Port Cros". Permet de récupérer les avis des visiteurs et de les stocker dans une base de données.
+Back-end du client web mobile pour le PFE *Fouille de données environnementales issues du site de Port Cros*. Permet de récupérer les avis des visiteurs et de les stocker dans une base de données.
 
 Ce serveur est developpé en **Node.js** avec le framework **Express.js**.
 
