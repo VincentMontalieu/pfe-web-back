@@ -35,7 +35,7 @@ Il y a trois façons de lancer le serveur :
 
 * Lancer `node bin/www.js` depuis le répertoire du projet.
 
-## Lancer the serveur en continu
+## Lancer le serveur en continu
 
 Je recommande l'utilisation de [Forever](https://github.com/foreverjs/forever).
 
