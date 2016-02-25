@@ -1,52 +1,52 @@
 # pfe-web-back
 
-Back-end du client web mobile pour le PFE "Fouille de données environnementales issues du site de Port Cros". Permet de récupérer les avis des visiteurs et de les stocker dans une base de données.
+Back-end du client web mobile pour le PFE *Fouille de données environnementales issues du site de Port Cros*. Permet de récupérer les avis des visiteurs et de les stocker dans une base de données **MySQL**.
 
 Ce serveur est developpé en **Node.js** avec le framework **Express.js**.
 
-This project is generated with [express-generator](http://expressjs.com/starter/generator.html)
+Ce projet est généré avec [express-generator](http://expressjs.com/starter/generator.html)
 version 4.13.1.
 
 ## Architecture
 
 ### bin
 
-Contains the script for creating and running the server based on the `app.js` file.
+Contient le script permettant de créer et de lancer le serveur à partir du fichier `app.js`.
 
 ### business
 
-Contains the scripts for interacting with the database.
+Contient les scripts permettant d'interagir avec la base de données.
 
 ### connector
 
-Contains the script for connecting with the database.
+Contient le script permettant de se connecter à la base de données.
 
 ### routes
 
-Contains the scripts for routing.
+Contient les scripts pour le routing.
 
-## Running the server
+## Lancer le serveur
 
-There are three ways to run this server:
+Il y a trois façons de lancer le serveur :
 
-* Run `grunt serve` from the project directory. The advantage of this method is the live reload function.
+* Lancer `grunt serve` depuis le répertoire du projet. L'avantage de cette méthode est la fonction de *live reload*.
 
-* Run `npm start` from project directory.
+* Lancer `npm start` depuis le répertoire du projet.
 
-* Run `node bin/www.js` from project directory.
+* Lancer `node bin/www.js` depuis le répertoire du projet.
 
-## Running the server continuously
+## Lancer le serveur en continu
 
-I recommend using [Forever](https://github.com/foreverjs/forever).
+Je recommande l'utilisation de [Forever](https://github.com/foreverjs/forever).
 
-* Run `forever start bin/www.js` from project directory.
+* Lancer `forever start bin/www.js` depuis le répertoire du projet.
 
-## Database
+## Base de données
 
-The database should be structured as follow:
+La base de données doit être organisée comme suit :
 
-* Name: `pfe`
+* Nom : `pfe`
 
-* One table: `survey`
+* Une seule table : `survey`
 
-* Rows: `id` `date` `proprete` `tranquilite` `services` `beaute` `raison`
+* Colonnes : `id` `date` `proprete` `tranquilite` `services` `beaute` `raison`
