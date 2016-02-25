@@ -16,7 +16,8 @@ function sendSurvey (req, res) {
   console.log(req.body);
 
   // Requete incomplete
-  if (!req.body.proprete || !req.body.tranquilite || !req.body.services || !req.body.beaute || !req.body.venue) {
+  if (!req.body.visite || !req.body.accueil || !req.body.information || !req.body.preservation 
+    || !req.body.reglementation || !req.body.frequentation) {
   	res.json({status: 'error', data: "Formulaire incomplet."});
   }
 
